@@ -1,0 +1,233 @@
+body {
+  background: #5F9F9F;/* Chrome 10+, Saf5.1+ */
+  text-align: center;
+  color: #4A777A;
+  font-family: helvetica, sans-serif;
+  background-image: url("../images/fish1.png"), -webkit-gradient(linear, top, bottom, from(#5F9F9F), to(#000010));
+  background-image: url("../images/fish1.png"), -webkit-linear-gradient(top, #5F9F9F, #000010);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 3600px;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+li>#submit {
+  margin-left: 35%;
+  border: 2px solid white;
+  border-radius: 2px;
+  width: 50px;
+  padding: 10px;
+}
+li>#submit:hover {
+  border: 2px solid darkslategray;
+  color: darkslategray;
+}
+
+
+#flock {
+  -webkit-animation: move 40s forwards infinite;
+  background-image: url("../images/fish1.png");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+
+.destiny li {
+  display: inline;
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: #0099CC;
+}
+
+#nav li {
+  position: fixed;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: arial;
+  color: lightblue;
+  font-size: 25px;
+  z-index: 900;
+}
+
+#newgame {
+  left: 5%;
+}
+
+#what {
+  left: 36%;
+}
+
+#scoreli {
+  left: 60%;
+}
+
+#quizblock {
+  position: fixed;
+  left: 32%;
+  top: 10%;
+  background-color: rgba(255,255,255,.5);
+  border: 2px dotted white;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 400px;
+  max-height: 600px;
+  margin: 20px auto;
+  color: white;
+  z-index: 10;
+}
+
+.checkbox {
+  background-color: white;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin: .5em;
+  margin-bottom: 0;
+}
+
+.clicked {
+  background-color: darkslategray;
+}
+
+.qheader {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+.destiny li:hover {
+  background: white;
+}
+
+ul.destiny {
+  padding: none;
+  -webkit-padding-start: 0px;
+}
+
+.content {
+  margin: 10px auto;
+  margin-top: 60px;
+  max-width: 450px;
+  font-size: 20px;
+}
+
+
+
+.loading {
+  margin-top: 20px;
+}
+
+.overlay, #endscreen {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 1000;
+  overflow-y: hidden;
+}
+
+#endscreen {
+  width: 40%;
+  height: 55%;
+  left: 30%;
+  top: 20%;
+  color: white;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+#close {
+  font-size: 20px;
+  margin-left: 40%;
+  max-width: 80px;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+}
+
+#close:hover {
+  color: darkslategray;
+  border: 2px solid darkslategray;
+}
+
+#endtext {
+  padding: 40px;
+  font-size: 20px;
+}
+
+#endtext a {
+  font-decoration: none;
+  color: darkslategray;
+}
+
+#endtext a:hover {
+  color: darkturquoise;
+}
+
+/***************fish***************/
+#coelacanth {
+  position: absolute;
+  left: -1650px;
+  top: 1800px;
+  transition: 15s linear;
+}
+#ship {
+  position: absolute;
+  top: 3020px;
+  left: 0;
+  z-index: 8;
+}
+#littlefish {
+  position: absolute;
+  top: 1500px;
+  left: -500px;
+  transition: 15s linear;
+}
+
+#anglerfish {
+  position: absolute;
+  top: 3100px;
+  left: -600px;
+  z-index: 9;
+  transition: 45s linear;
+}
+
+#jellyfish {
+  position: absolute;
+  left: -350px;
+  top: 800px;
+  transition: 8s linear;
+}
+/*
+#littlefish:hover {
+-webkit-transform: translate(200px);
+}*/
+#fish1 {
+  position: absolute;
+  top: 200px;
+  right: -200px;
+}
+
+#fish1 {
+    -webkit-transition-duration: 600ms;
+    transition-duration: 600ms;
+}
+
+body
+ { -webkit-animation: move 40s forwards infinite; }
+
+
+@-webkit-keyframes move {
+    0%   { background-position:  1550%  10%; }
+    100% { background-position: -1575% 10%; }

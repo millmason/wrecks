@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>SHIPWRECK</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+      <div class="overlay" id="modal">
+        <svg class="loading" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="590px" height="120px" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
+          <defs>
+            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+              <path fill="#5F9F9F" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+            </pattern>
+            <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-family="'Cabin Condensed'" font-size="161.047">WRECKS</text>
+            <mask id="text-mask">
+              <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+            </mask>
+          </defs>
+        	  <use x="0" y="0" xlink:href="#text" fill="#C0D9D9"/>
+          <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+        </svg>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script>
+
+                <script src="js/index.js"></script>
+        <section class="content">
+            <p>Answer ten questions to discover which historic shipwreck most resembles you, and your possible future resting place.</p>
+            <p>Click "restart" to start the quiz over.</p>
+            <p id="ready">Are you ready to determine how you will meet your inevitable demise?</p>
+            <p class="notready"> Understandable. Return when you are ready.</p>
+            <p class="notready"> Are you now ready? </p>
+            <ul class="destiny">
+              <li id="yes" class="go">Yes</li>
+              <li id="no">No</li>
+            </ul>
+        </section>
+      </div>
+      <div id="endscreen">
+        <div id="endtext">
+        </div>
+        <div id="close">close</div>
+      </div>
+<ul id="nav">
+  <li id="newgame">restart</li>
+  <li id="what">what?</li>
+  <li id="scoreli">question: <span id="questionno">1</span>/10</li>
+</ul>
+<section id="creatures">
+    <div id="littlefish">
+      <img src="images/littlefish.png">
+    </div>
+    <div id="coelacanth">
+      <img src="images/coelacanth.png">
+    </div>
+    <div id="jellyfish">
+      <img src="images/jellyfish.png">
+    </div>
+    <div id="ship">
+      <img src="images/ship.png">
+    </div>
+    <div id="anglerfish">
+      <img src="images/anglerfish.png">
+    </div>
+</section>
+<section id="quizblock">
+  <ul class="quiz" id="shipwreck">
+    <li class="qheader"></li>
+    <li class="answeropt"><div class="checkbox"></div><span id="a"></span></li>
+    <li class="answeropt"><div class="checkbox"></div><span id="b"></span></li>
+    <li class="answeropt"><div class="checkbox"></div><span id="c"></span></li>
+    <li class="answeropt"><div class="checkbox"></div><span id="d"></span></li>
+    <li><p id="submit">submit</p></li>
+  <ul>
+</section>
+<div id="water">
+</div>
+  </body>
+</html>
