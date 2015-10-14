@@ -201,6 +201,10 @@ function calculateScore(){
 
 function newGame(){
   questionNumber = 0;
+  wreckArray[0].score = 0;
+  wreckArray[1].score = 0;
+  wreckArray[2].score = 0;
+  wreckArray[3].score = 0;
   $("#questionno").html(questionNumber+1);
   $("#quizblock").fadeIn(2000);
   $("#endscreen").fadeOut(1000);
