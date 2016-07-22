@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+  var currentQuestion = null;
+  var questionNumber = 0;
+  var scoreNumber = 0;
+  var TitanicScore = 0;
+  var VikingScore = 0;
+  var PirateScore = 0;
+  var MaconScore = 0;
+
+    function resetScores() {
+      scoreNumber = 0;
+      TitanicScore = 0;
+      VikingScore = 0;
+      PirateScore = 0;
+      MaconScore = 0;
+    }
+
     $("#endscreen").hide();
     $("#quizblock").hide();
     $("#nav").hide();
@@ -48,13 +64,6 @@ $(document).ready(function(){
 	});
 
     /*--quiz js--*/
-var currentQuestion = null;
-var questionNumber = 0;
-var scoreNumber = 0;
-var TitanicScore = 0;
-var VikingScore = 0;
-var PirateScore = 0;
-var MaconScore = 0;
 
 /*
 for each question -
@@ -205,6 +214,7 @@ function newGame(){
   $("#quizblock").fadeIn(2000);
   $("#endscreen").fadeOut(1000);
   $("#coelacanth").css("left", "-1650px");
+  resetScores();
   questionLoad();
 }
 
