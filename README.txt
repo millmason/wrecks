@@ -1,5 +1,6 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/lbebber/pen/RPvxGp.
+# WRECKS
 
- Revisiting my old [CSS Text Filling with Water](http://codepen.io/lbebber/pen/xrwja) pen for an article, this time made with SVG, for hopefully better support.
+## A 10-question survey to explore what shipwreck you most closely resemble.
+One of the first projects I ever tinkered with while learning -- animations made with SVGs and CSS
 
-This time, animating with JS, since some browsers don't support animating the x/y properties through CSS.
+Credit to a codepen here for the "text filling with water" effect -- http://codepen.io/lbebber/pen/RPvxGp.
